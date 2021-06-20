@@ -1,0 +1,295 @@
+html{
+    background-color: #F6C2DE;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.sign {
+    text-align: right;   
+    padding-top: 5px;
+    padding-right: 10px;
+    background-color: #d8f8fc;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #d8f8fc;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo{
+    color: #e7b2ce;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.155em; 
+    font-family: Beth Ellen;
+    font-style: normal;
+    font-weight: normal;   
+    font-size: 50px;
+
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #030303;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    background: #fff;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+@media (max-width: 1000px){
+nav{
+    padding: 0 40px 0 50px;
+  }
+}
+
+@media (max-width: 920px) {
+nav .menu-btn i{
+    display: block;
+}
+
+#click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+}
+
+nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: rgb(99, 100, 99);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+#click:checked ~ ul{
+  left: 0;
+}
+
+nav ul li{
+    width: 100%;
+    margin: 40px 0;
+}
+
+nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#click:checked ~ ul li a{
+  margin-left: 0px;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    background: none;
+    color: rgb(173, 247, 247);
+  }
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding: 0 30px;
+    color: #1b1b1b;
+}
+.content div{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+div{
+    position: absolute;
+    left: 550px;
+    font-style: normal;
+    font-family: comic sans ms;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.120em; 
+    top: 240px;
+}
+
+
+.hr1{    
+    margin: -360px 270px;
+	padding: 0;
+	height: 0;
+	border: none;
+    border-top: 2px solid rgb(194, 0, 0);
+}
+
+.image1{
+    position: absolute;
+    top: 415px;
+    left: 265px;
+}
+
+.image2{
+    position: absolute;
+    top: 570px;
+    left: 265px;
+}
+
+.image5{
+    position: absolute;
+    width: 90px;
+    height: 180px;
+    left: 1020px;
+    top: 80px;
+}
+
+.image3{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    left: 210px;
+    top: 280px;
+}
+
+.image4{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 1020px;
+    top: 440px;
+}
+
+.image6{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 230px;
+    top: 580px;
+}
+
+.image7{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 230px;
+    top: 430px;
+}
+
+.image8{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 1020px;
+    top: 600px;
+}
+
+.image9{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 1010px;
+    top: 270px;
+}
+
+
+h1{    
+    position: absolute;
+    width: 750px;
+    left: 350px;
+    top: 110px;
+    font-family: comic sans ms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 77px;
+    letter-spacing: 0.140em;    
+}
+
+h2{
+    position: absolute;
+    left: 580px;
+    top: 200px;
+    font-family: comic sans ms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 169.6%;
+    letter-spacing: 0.165em; 
+}
+
+h3{
+    position: absolute;
+    left: 560px;
+    top: 360px;
+    font-family: comic sans ms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    letter-spacing: 0.165em; 
+}
+
+h4{
+    position: absolute;
+    left: 550px;
+    top: 520px;
+    font-family: comic sans ms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    letter-spacing: 0.120em; 
+}
+
+p{
+    position: absolute;
+    left: 365px;
+    font-style: normal;
+    font-family: comic sans ms;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 400%;
+    letter-spacing: 0.120em;
+}
+

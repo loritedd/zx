@@ -1,0 +1,346 @@
+html{
+    background-color: #F6C2DE ;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.sign {
+  text-align: right;   
+  padding-top: 5px;
+  padding-right: 10px;
+  background-color: #d8f8fc;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #d8f8fc;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo{
+    color: #e7b2ce;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.155em;
+    font-family: Beth Ellen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #030303;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    background: #fff;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+@media (max-width: 1000px){
+nav{
+    padding: 0 40px 0 50px;
+  }
+}
+
+@media (max-width: 920px) {
+nav .menu-btn i{
+    display: block;
+}
+
+#click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+}
+
+nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: rgb(99, 100, 99);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+#click:checked ~ ul{
+  left: 0;
+}
+
+nav ul li{
+    width: 100%;
+    margin: 40px 0;
+}
+
+nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#click:checked ~ ul li a{
+  margin-left: 0px;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    background: none;
+    color: rgb(173, 247, 247);
+  }
+}
+
+h1{
+  position: absolute;
+  width: 750px;
+  left: 500px;
+  top: 110px;
+  font-family: comic sans ms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  letter-spacing: 0.200em;
+}
+
+.Nails{
+  position: absolute;
+  width: 500px;
+  top: 220px;
+  left: 80px;
+  font-family: comic sans ms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  letter-spacing: 0.140em;
+}
+
+.Hair {
+  position: absolute;
+  top: 600px;
+  width: 500px;
+  left: 80px;
+  font-family: comic sans ms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  letter-spacing: 0.140em;
+}
+
+.Makeup{
+  position: absolute;
+  top: 980px;
+  width: 500px;
+  left: 80px;
+  font-family: comic sans ms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  letter-spacing: 0.140em;
+}
+
+.image16{
+  position: absolute;
+  top: 1320px;
+  left: 30px;
+  width: 95%;
+  right: 30px;
+}
+
+.image17{
+  position: absolute;
+  top: 950px;
+  left: 30px;
+  width: 95%;
+  right: 30px;
+}
+
+.image18{
+  position: absolute;
+  top: 570px;
+  left: 30px;
+  width: 95%;
+  right: 30px;
+}
+
+.image1{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 40px;
+  top: 350px;
+  border: 5px solid #a6d6d6;
+}
+
+.image2{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 300px;
+  top: 350px;
+  border: 5px solid #a6d6d6;
+}
+
+.image3{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 560px;
+  top: 350px;
+  border: 5px solid #a6d6d6;
+}
+
+.image4{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 820px;
+  top: 350px;
+  border: 5px solid #a6d6d6;
+}
+
+.image5{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 1080px;
+  top: 350px;
+  border: 5px solid #a6d6d6;
+}
+
+
+
+.image6{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 40px;
+  top: 730px;
+  border: 5px solid #a6d6d6;
+}
+
+.image7{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 300px;
+  top: 730px;
+  border: 5px solid #a6d6d6;
+}
+
+.image8{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 560px;
+  top: 730px;
+  border: 5px solid #a6d6d6;
+}
+
+.image9{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 820px;
+  top: 730px;
+  border: 5px solid #a6d6d6;
+}
+
+.image10{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 1080px;
+  top: 730px;
+  border: 5px solid #a6d6d6;
+}
+
+
+
+
+.image11{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 40px;
+  top: 1110px;
+  border: 5px solid #a6d6d6;
+}
+
+.image12{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 300px;
+  top: 1110px;
+  border: 5px solid #a6d6d6;
+}
+
+.image13{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 560px;
+  top: 1110px;
+  border: 5px solid #a6d6d6;
+
+}
+
+.image14{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 820px;
+  top: 1110px;
+  border: 5px solid #a6d6d6;
+}
+
+.image15{
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 1080px;
+  top: 1110px;
+  border: 5px solid #a6d6d6;
+}

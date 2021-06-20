@@ -1,0 +1,278 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+ /* Container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #d8f8fc;
+    align-items: center;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+}
+
+nav .logo{
+    color: #e7b2ce;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.155em; 
+    font-family: Beth Ellen;
+    font-style: normal;
+    font-weight: normal;   
+    font-size: 50px;
+    display: inline-block;
+    margin: 0;
+    margin-left: 20px;
+
+}
+
+nav ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #030303;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    background: #fff;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Intro */
+.intro {
+    background-image: url(img/image2.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+
+.intro__inner {
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+    font-family: comic sans ms;
+
+
+
+}
+
+.intro__inner h5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.21;
+    font-family: comic sans ms;
+}
+
+.intro__inner h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+    font-family: comic sans ms;
+}
+
+/* button */
+.button {
+    padding: 14px 24px;
+    background-color: rgb(176, 246, 251);
+    border: none;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a.button:hover{
+    color: rgb(72, 91, 116);
+}
+.button:hover{
+    box-shadow: brown 2px 2px 4px;
+}
+
+/* About */
+
+.about__inner {
+    padding: 105px 0;
+    text-align: center;
+    font-family: comic sans ms;
+}
+
+.about__inner h1 {
+    font-size: 36px;
+}
+
+
+.about__inner p{
+    opacity: .9;
+    font-family: comic sans ms;
+}
+
+.about__item {
+    display: inline-block;
+    width: 33%;
+}
+
+.about__text {
+    width: 50%;
+    display: inline-block;
+}
+
+.about__image {
+    width: 30%;
+    border-radius: 100%;
+}
+
+.about__title {
+    font-size: 16px;
+}
+
+.about__par {
+    font-size: 14px;
+}
+
+.about__list {
+    padding: 70px 0 55px;
+}
+
+/*Services*/
+.services {
+    background-color: #F6C2DE;
+    font-family: comic sans ms;
+}
+
+.services__inner{
+    padding: 105px 0;
+}
+
+.services__info {
+    display: flex;
+    align-items: center;
+}
+
+.services__title{
+    font-size: 36px;
+}
+
+.services__text p {
+    opacity: 0.6;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.services__text {
+     margin-left: 60px;
+    padding-right: 60px;
+}
+
+.services__image {
+    width: 30%;
+    margin-right: 40px;
+    border-radius: 100%;
+}
+
+hr {
+    margin: 105px 0;
+}
+
+.services__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__item h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* Footer */
+footer {
+    background-color: #e0e0e0;
+}
+
+.footer__info {
+    padding: 70px 0;
+    margin: 0px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+.footer__item {
+    color: #999;
+    font-size: 14px;
+}
+
+.footer__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer__item {
+    padding: 15px 0;
+}
+
+.footer__item a {
+    text-decoration: none;
+    color: #999;
+}
+
+.footer__license {
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid gray;
+}
+.map{
+    margin-top: 20px;
+}
+.sign {
+    text-align: right;   
+    padding-top: 5px;
+    padding-right: 10px;
+    background-color: #d8f8fc;
+}
